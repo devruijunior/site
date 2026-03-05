@@ -1,0 +1,26 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color:blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    height: 200px;
+    color: black;
+}
+
+p ~ a {
+    font-weight: bold;
+    color: red;
+}
+p > a {
+    font-weight: bold;
+    color: blue;
+}
+p  a {
+    font-weight: bold;
+    color: yellow;
+}
