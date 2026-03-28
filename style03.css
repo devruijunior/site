@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu menu menu"
+        "sidebar-left main sidebar-right"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 50px 1fr 60px;
+    height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    grid-area: header;
+    background-color: #4CAF50;
+}
+
+/* Menu */
+nav {
+    grid-area: menu;
+    background-color: #333;
+}
+
+/* Barra lateral esquerda */
+.sidebar-left {
+    grid-area: sidebar-left;
+    background-color: #f4f4f4;
+}
+
+/* Conteúdo principal */
+main {
+    grid-area: main;
+    background-color: #ffffff;
+}
+
+/* Barra lateral direita */
+.sidebar-right {
+    grid-area: sidebar-right;
+    background-color: #f4f4f4;
+}
+
+/* Rodapé */
+footer {
+    grid-area: footer;
+    background-color: #222;
+}
