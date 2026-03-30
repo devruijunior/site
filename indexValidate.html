@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aula Javascript</title>
+<style>
+    label, button {
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <h1>Formulario de contato</h1>
+
+    <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required maxlength="256" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required maxlength="356" />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="scriptValidate.js"></script>
+</body>
+</html>
